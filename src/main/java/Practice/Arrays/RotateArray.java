@@ -17,10 +17,8 @@ public class RotateArray {
 
        for (int num : a) {
            if (index - d < 0) {
-              // System.out.println((size + index++) - d + "---" + num);
                list.set((size + index++) - d, num);
            } else {
-             //  System.out.println(index++ - d + "----" + num);
                list.set(index++ - d , num);
            }
        }

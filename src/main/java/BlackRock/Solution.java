@@ -9,20 +9,28 @@ package BlackRock;
 
 public class Solution {
 
+
+    public static String getFizzOrBuzz(int i) {
+        return  (i%15==0)? "FizzBuzz"
+                :(i%3==0)? "Fizz"
+                :(i%5==0)?"Buzz":Integer.toString(i);
+    }
+
+    public static int runNTimes(int n) {
+
+        int counter = 0;
+
+        for (int i = 1; i<= n; i++) {
+            getFizzOrBuzz(i);
+            counter++;
+        }
+        return counter;
+    }
+
+
     public static void main(String[] args) {
 
-        for (int i = 1; i <= 100; i++) {
-
-            if (i%5 == 0 && i%3 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (i%3 == 0) {
-                System.out.println("Fizz");
-            } else if (i%5 == 0) {
-                System.out.println("Buzz");
-            } else {
-                System.out.println(i);
-            }
-        }
+        runNTimes(100);
 
     }
 }
