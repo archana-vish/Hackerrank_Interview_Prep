@@ -43,7 +43,6 @@ public class FizzBuzzElegantTest {
 
     @Test
     public void testSystemOut() {
-        System.out
         assertEquals("Fizz", fizzBuzzElegant.testSystemOut("Fizz"));
     }
 
