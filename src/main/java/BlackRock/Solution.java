@@ -21,7 +21,7 @@ public class Solution {
         int counter = 0;
 
         for (int i = 1; i<= n; i++) {
-            getFizzOrBuzz(i);
+            System.out.println(getFizzOrBuzz(i));
             counter++;
         }
         return counter;
